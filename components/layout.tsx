@@ -12,7 +12,7 @@ export default function Layout({ children, home = false }: LayoutProps) {
   return (
     <div className="mx-auto mb-16" style={{ maxWidth: 400 }}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
