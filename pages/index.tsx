@@ -87,18 +87,18 @@ export default function Home({ allEpisodesData }: HomeProps) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className="grid grid-cols-2 gap-4 mb-12">
+      <section className="grid grid-cols-1 xs:grid-cols-2 gap-4 mb-12">
         {PodcastChannels.map(({ text, icon, url }, index) => (
           <ListenButton key={index} text={text} url={url} icon={icon} />
         ))}
       </section>
       <section>
-        <h2 className="text-2xl text-gray-700 mb-4">جميع الحلقات</h2>
+        <h2 className="text-2xl text-gray-700 mb-4">الحلقات</h2>
         <ul>
           {allEpisodesData.map(({ id, date, title }) => (
-            <li key={id} className="flex flex-col mb-4 last:mb-0">
+            <li key={id} className="flex flex-col mb-8 last:mb-0">
               <Link href={`/${id}`}>
-                <a className="text-indigo-500 font-medium">{title}</a>
+                <a className="text-barmim-500 font-medium">{title}</a>
               </Link>
               <Date dateString={date} />
             </li>

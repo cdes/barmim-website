@@ -10,7 +10,7 @@ interface LayoutProps {
 
 export default function Layout({ children, home = false }: LayoutProps) {
   return (
-    <div className="mx-auto mb-16" style={{ maxWidth: 400 }}>
+    <div className="mx-auto mb-16 p-4" style={{ maxWidth: 400 }}>
       <Head>
         <link rel="icon" href="/favicon.png" />
         <meta
@@ -25,6 +25,7 @@ export default function Layout({ children, home = false }: LayoutProps) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <header className="mb-8 flex flex-col">
         {home ? (

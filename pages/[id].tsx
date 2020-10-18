@@ -28,9 +28,9 @@ export default function Episode({ episodeData }: EpisodeProps) {
       <Head>
         <title>{episodeData.title}</title>
       </Head>
-      <article>
+      <article className="episode">
         <h1>{episodeData.title}</h1>
-        <div>
+        <div className="mb-4">
           <Date dateString={episodeData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: episodeData.contentHtml }} />
