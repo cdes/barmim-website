@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedEpisodesData } from "../lib/episodes";
 import Link from "next/link";
 import Date from "../components/date";
-import { PostData } from "./posts/[id]";
+import { EpisodeData } from "./[id]";
 import ListenButton from "../components/listen-button";
 
 interface HomeProps {
-  allPostsData: PostData[];
+  allEpisodesData: EpisodeData[];
 }
 
 const PodcastChannels = [
@@ -81,28 +81,26 @@ const PodcastChannels = [
   },
 ];
 
-export default function Home({ allPostsData }: HomeProps) {
+export default function Home({ allEpisodesData }: HomeProps) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className="grid grid-cols-2 gap-4 mb-8">
-        {PodcastChannels.map(({ text, icon, url }) => (
-          <ListenButton text={text} url={url} icon={icon} />
+      <section className="grid grid-cols-2 gap-4 mb-12">
+        {PodcastChannels.map(({ text, icon, url }, index) => (
+          <ListenButton key={index} text={text} url={url} icon={icon} />
         ))}
       </section>
       <section>
-        <h2 className="text-2xl text-gray-700 mb-2">جميع الحلقات</h2>
+        <h2 className="text-2xl text-gray-700 mb-4">جميع الحلقات</h2>
         <ul>
-          {allPostsData.map(({ id, date, title }) => (
+          {allEpisodesData.map(({ id, date, title }) => (
             <li key={id} className="flex flex-col mb-4 last:mb-0">
-              <Link href={`/posts/${id}`}>
+              <Link href={`/${id}`}>
                 <a className="text-indigo-500 font-medium">{title}</a>
               </Link>
-              <span className="text-gray-700 opacity-50 text-sm">
-                <Date dateString={date} />
-              </span>
+              <Date dateString={date} />
             </li>
           ))}
         </ul>
@@ -112,10 +110,10 @@ export default function Home({ allPostsData }: HomeProps) {
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const allEpisodesData = await getSortedEpisodesData();
   return {
     props: {
-      allPostsData,
+      allEpisodesData,
     },
   };
 }

@@ -11,7 +11,7 @@ interface LayoutProps {
 
 export default function Layout({ children, home = false }: LayoutProps) {
   return (
-    <div className="m-auto" style={{ maxWidth: 400 }}>
+    <div className="mx-auto mb-16" style={{ maxWidth: 400 }}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -58,7 +58,7 @@ export default function Layout({ children, home = false }: LayoutProps) {
             <Link href="/">
               <a>
                 <img src="/barmim-logo-symbol.svg" width={60} height={60} />
-                <span className="font-bold text-indigo-400">بودكاست برميم</span>
+                <span className="font-bold text-barmim-500">بودكاست برميم</span>
               </a>
             </Link>
           </>
