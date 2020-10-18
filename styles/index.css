@@ -1,0 +1,75 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+@font-face {
+  font-family: "Dubai";
+  src: url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Light");
+  src: url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Light.eot")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Light.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Light.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Light.ttf")
+      format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dubai";
+  src: url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Regular.eot");
+  src: url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Regular.eot")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Regular.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Regular.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dubai";
+  src: url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Medium.eot")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Medium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Medium.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dubai";
+  src: url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Bold.eot")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/npm/dubai-font@1.1.1/dubai-font/fonts/Dubai-Bold.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write your own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
