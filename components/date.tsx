@@ -9,7 +9,7 @@ function DateComponent({ dateString }: DateProps) {
   const date = new Date(dateString);
   return (
     <time dateTime={dateString}>
-      <span className="text-gray-700 opacity-50 text-sm">
+      <span className="text-gray-500 text-sm">
         {format(date, "d/LLLL/yyyy", {
           locale: ar,
         })}
