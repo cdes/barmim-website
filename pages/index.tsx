@@ -13,7 +13,8 @@ interface HomeProps {
 const PodcastChannels = [
   {
     text: "آبل بودكاست",
-    url: "url",
+    url:
+      "https://podcasts.apple.com/sa/podcast/%D8%A8%D9%88%D8%AF%D9%83%D8%A7%D8%B3%D8%AA-%D8%A8%D8%B1%D9%85%D9%8A%D9%85-barmim-podcast/id1531582080",
     icon: (
       <img
         src="/podcast-platforms-logos/apple-podcast.svg"
@@ -24,7 +25,8 @@ const PodcastChannels = [
   },
   {
     text: "جوجل بودكاست",
-    url: "url",
+    url:
+      "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8zNjJiMzg5OC9wb2RjYXN0L3Jzcw",
     icon: (
       <img
         src="/podcast-platforms-logos/google-podcast.svg"
@@ -35,14 +37,14 @@ const PodcastChannels = [
   },
   {
     text: "أوڤركاست",
-    url: "url",
+    url: "https://overcast.fm/itunes1531582080/barmim-podcast",
     icon: (
       <img src="/podcast-platforms-logos/overcast.svg" width={32} height={32} />
     ),
   },
   {
     text: "بوكت كاستس",
-    url: "url",
+    url: "https://pca.st/itunes/1531582080",
     icon: (
       <img
         src="/podcast-platforms-logos/pocket-casts.svg"
@@ -53,28 +55,28 @@ const PodcastChannels = [
   },
   {
     text: "أنغامي",
-    url: "url",
+    url: "https://play.anghami.com/album/1014884467",
     icon: (
       <img src="/podcast-platforms-logos/anghami.svg" width={32} height={32} />
     ),
   },
   {
     text: "ديزر",
-    url: "url",
+    url: "https://www.deezer.com/en/show/1757812",
     icon: (
       <img src="/podcast-platforms-logos/deezer.svg" width={32} height={32} />
     ),
   },
   {
     text: "كاسترو",
-    url: "url",
+    url: "https://castro.fm/podcast/dfcfcfce-8114-42a1-ba19-e9614a5adc88",
     icon: (
       <img src="/podcast-platforms-logos/castro.svg" width={32} height={32} />
     ),
   },
   {
     text: "أنكور",
-    url: "url",
+    url: "https://anchor.fm/barmim",
     icon: (
       <img src="/podcast-platforms-logos/anchor.svg" width={32} height={32} />
     ),
