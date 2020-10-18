@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-const name = "[Your Name]";
-export const siteTitle = "Next.js Sample Website";
+export const siteTitle = "بودكاست برميم٬ اختصار من برمجة وتصميم";
 
 interface LayoutProps {
   children: React.ReactNode;
