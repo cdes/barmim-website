@@ -32,17 +32,16 @@ export default function Episode({ episodeData }: EpisodeProps) {
       </Head>
       <article className="episode">
         <h1>{episodeData.title}</h1>
-        <div className="mb-4">
-          <Date dateString={episodeData.date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: episodeData.contentHtml }} />
-
         <ReactAudioPlayer
           src={episodeData.audioUrl}
           controls
           preload="none"
           className="w-full focus:outline-none my-8"
         />
+        <div className="mb-4">
+          <Date dateString={episodeData.date} />
+        </div>
+        <div dangerouslySetInnerHTML={{ __html: episodeData.contentHtml }} />
       </article>
     </Layout>
   );
